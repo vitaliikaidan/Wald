@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wald — Pankow · Weissensee · Prenzlauer Berg</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+ 
+    <a class="logo" href="#">
+      <img src="./assets/logo1.png" alt="Logo">
+    </a>
+ 
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+ 
+      <ul id="nav-list" class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Entdecken & Erleben</a></li>
+        <li><a href="#">Veranstaltung</a></li>
+        <li><a href="#">Gastgeber</a></li>
+        <li><a href="#">Essen & Trinken</a></li>
+        <li><a href="#">Kunsttouren</a></li>
+        <li><a href="#">Ausflüge/Touren</a></li>
+        <li><a href="#">Zeitreise Prenzlauer Berg</a></li>
+      </ul>
+    </nav>
+ 
+    <a href="mailto:info@tic-berlin.de" class="mail-link">info@tic-berlin.de</a>
+ 
+    <form class="search-bar">
+      <input type="text" placeholder="Suche…">
+      <button type="submit">🔍</button>
+    </form>
+ 
+  </div>
+</header>
+          
+ 
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main class="container">
+    <section class="hero">
+      
+      <div class="hero-inner">
+        <h1>Wald</h1>
+    </section>
+ 
+    <section class="places-grid" aria-labelledby="places-heading">
+ 
+ 
+  <article class="place-card">
+    <div class="place-media">
+      <img src="./assets/wald 1.jpg" alt="Bucher Forst — Waldpfad" />
+    </div>
+ 
+    <div class="place-body">
+      <h3>Bucher Forst</h3>
+      <p>
+        Der Pankower Ortsteil Buch liegt inmitten eines Waldgebiets, das aus
+        250 Hektar Hochwald und den 1984 stillgelegten Rieselfeldern mit ihrer
+        typischen Pflanzen- und Tierwelt besteht. Als Teil des Naturparks Barnim
+        bietet der Bucher Forst einen wichtigen Erholungsraum für Berlin.
+      </p>
+      <p><a class="more" href="#">Mehr »</a></p>
+    </div>
+ 
+    <div class="place-location">
+      <p>📍 Bucher Forst 13125 Berlin</p>
+    </div>
+  </article>
+ 
+  <article class="place-card">
+    <div class="place-media">
+      <img src="./assets/wald2.jpeg" alt="Schönholzer Heide — Waldweg" />
+    </div>
+ 
+    <div class="place-body">
+      <h3>Schönholzer Heide</h3>
+      <p>
+        Die Schönholzer Heide ist ein kleiner Stadtwald, der seit 2014 als
+        Landschaftsschutzgebiet ausgewiesen ist. Durch den Baumbestand aus
+        Kiefern, Fichten, Ahorn, Platanen und Eichen führen Spazierwege, die den
+        Stadttrubel vergessen lassen.
+      </p>
+      <p><a class="more" href="#">Mehr »</a></p>
+    </div>
+ 
+    <div class="place-location">
+      <p>📍 Hermann-Hesse-Straße 13156 Berlin</p>
+    </div>
+  </article>
+</section>
+ 
+ 
+    <section class="share-print">
+      <p>
+        <a href="#" class="btn">Auf Facebook teilen</a>
+        <a href="#" class="btn">Per E-Mail</a>
+        <a href="#" class="btn secondary" onclick="window.print()">Seite drucken</a>
+      </p>
+    </section>
+  </main>
+ 
+  <footer class="site-footer">
+  <div class="container footer-grid">
+ 
+   <div class="footer-contact">
+  <a class="logo" href="#">
+    <img src="./assets/logo1.png" alt="Logo">
+  </a>
+ 
+  <div class="contact-block">
+    <h5>Rufen Sie uns an</h5>
+    <a href="tel:+493091206775" class="footer-link">+49 30 91 20 67 75</a>
+ 
+    <h5>Schreiben Sie uns</h5>
+    <a href="mailto:info@tic-berlin.de" class="footer-link">info@tic-berlin.de</a>
+  </div>
+</div>
+ 
+<div class="footer-links">
+  <h4>Quick Links</h4>
+  <ul class="plain">
+    <li><a class="footer-link" href="#">Datenschutz</a></li>
+    <li><a class="footer-link" href="#">Impressum</a></li>
+  </ul>
+</div>
+ 
+ 
+<div class="footer-newsletter">
+  <h4>Newsletter</h4>
+
+  <form id="nl" class="newsletter" action="#" method="post">
+    <label class="sr-only" for="email">E-Mail</label>
+
+    <div class="newsletter-field">
+      <input 
+        id="email" 
+        name="email" 
+        type="email" 
+        placeholder="E-Mail" 
+        required 
+      />
+      <button type="submit">Anmelden</button>
+    </div>
+  </form>
+</div>
+
+ 
+<div class="copyright">
+  © Bezirksamt Pankow
+</div>
+ 
+ 
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav-list');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
